@@ -48,8 +48,11 @@ class SearchViewController: UIViewController {
   // MARK: - IBOutlets
   //
   @IBOutlet weak var tableView: UITableView!
-  @IBOutlet weak var searchBar: UISearchBar!
-  
+  @IBOutlet weak var searchBar: UISearchBar!;
+ 
+
+
+
   //
   // MARK: - Variables And Properties
   //
@@ -57,7 +60,7 @@ class SearchViewController: UIViewController {
   lazy var downloadsSession: URLSession = {
     let configuration =
       URLSessionConfiguration.background(withIdentifier:
-                                           "pl.bgSession")
+                                           "backgroundSession")
 
     
     return URLSession(configuration: configuration,
@@ -109,6 +112,22 @@ class SearchViewController: UIViewController {
     super.viewDidLoad()
     tableView.tableFooterView = UIView()
     
+    //searchBar.showsCancelButton = true
+//    searchBar.barTintColor = UIColor.red
+    searchBar.tintColor = UIColor.white
+    if #available(iOS 13.0, *) {
+      searchBar.searchTextField.backgroundColor = UIColor.black
+      searchBar.searchTextField.tintColor = UIColor.white
+      searchBar.searchTextField.textColor = UIColor.white
+      print("asd");
+    } else {
+      // Fallback on earlier versions
+    }
+//    searchBar.
+    //searchBar.tintColor = UIColor.red
+    
+    //searchBar.tintColor = [UIColor colorWithWhite:0.3 alpha:1.0];
+
     // TODO 7
     downloadService.downloadsSession = downloadsSession
 
