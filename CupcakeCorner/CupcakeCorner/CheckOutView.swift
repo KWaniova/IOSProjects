@@ -30,15 +30,15 @@ struct CheckoutView: View {
 
                     Button("Place Order") {
                         self.placeOrder()
-                    }
+                    }.accentColor(.purple)
                     .padding()
                     }
                 }
             }
         .navigationBarTitle("Check out", displayMode: .inline).alert(isPresented: $showingConfirmation) {
                 Alert(title: Text("Thank you!"), message: Text(confirmationMessage), dismissButton: .default(Text("OK")))
-            }
         }
+    }
     func placeOrder() {
         guard let encoded = try? JSONEncoder().encode(order) else {
             print("Failed to encode order")

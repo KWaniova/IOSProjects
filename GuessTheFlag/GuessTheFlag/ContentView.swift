@@ -7,36 +7,6 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        VStack{
-            //        ZStack {
-            //            Color(red: 0.7, green: 0.7, blue: 0.6).edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            //
-            //            Color.green.frame(width: 200, height: 200)
-            //
-            //
-            //            Text("Hello world worlllllllllld")
-            //
-            //            Text("Hello worlllllllllld").background(Color.yellow)
-            //            Text("Hello World").background(Color.red)
-            //
-            //
-            //        }.background(Color.green)
-            Button(action: {
-                print("Edit button was tapped")
-            }) {
-                HStack(spacing: 10) {
-                    Image(systemName: "pencil")
-                    Text("Edit")
-                }
-            }
-        }
-        
-        
-        
-    }
-}
 
 struct MainView: View {
     @State private var showingAlert = false
@@ -102,5 +72,38 @@ struct MainView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
+    }
+}
+
+
+
+struct ContentView: View {
+    var body: some View {
+        VStack{
+            //        ZStack {
+            //            Color(red: 0.7, green: 0.7, blue: 0.6).edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            //
+            //            Color.green.frame(width: 200, height: 200)
+            //
+            //
+            //            Text("Hello world worlllllllllld")
+            //
+            //            Text("Hello worlllllllllld").background(Color.yellow)
+            //            Text("Hello World").background(Color.red)
+            //
+            //
+            //        }.background(Color.green)
+            Button(action: {
+                print("Edit button was tapped")
+            }) {
+                HStack(spacing: 10) {
+                    Image(systemName: "pencil")
+                    Text("Edit")
+                }
+            }
+        }
+        
+        
+        
     }
 }

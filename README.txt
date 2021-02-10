@@ -10,8 +10,12 @@ https://www.raywenderlich.com/5371-grand-central-dispatch-tutorial-for-swift-4-p
 URLSession
 https://www.raywenderlich.com/3244963-urlsession-tutorial-getting-started
 
-CoreData
+CoreData - notes (imiona)
 https://www.raywenderlich.com/7569-getting-started-with-core-data-tutorial
+
+Background tasks
+https://www.raywenderlich.com/5817-background-modes-tutorial-getting-started
+-4 options: audio, location updates, finite-lenght, fetch
 
 SwiftUI
 =========
