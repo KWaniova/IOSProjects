@@ -108,7 +108,6 @@ private extension PhotoCollectionViewController {
       // 3
       self.navigationController?.viewIfLoaded?.setNeedsLayout()
     }
-    // Implement me!
   }
   
   func downloadImageAssets() {

@@ -132,7 +132,6 @@ extension ViewController: UITableViewDataSource {
          note.value(forKeyPath: "text") as? String
        return cell
   }
-    
 }
 
 
