@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ColculatorApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="n3x-VN-7QG">
+                                <rect key="frame" x="35" y="358" width="344" height="484"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cAd-85-oVz">
+                                        <rect key="frame" x="0.0" y="0.0" width="344" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fg4-n6-E8e" customClass="RoundButton" customModule="ColculatorApp">
+                                                <rect key="frame" x="0.0" y="0.0" width="256" height="80"/>
+                                                <color key="backgroundColor" red="0.63513058420000001" green="0.63934504989999996" blue="0.63510048389999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="6Cp-e6-p2d"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="38"/>
+                                                <state key="normal" title="AC">
+                                                    <color key="titleColor" red="0.023628043009999999" green="0.019594857470000001" blue="0.019556321200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" red="1" green="0.56443629839999998" blue="0.035574158760000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQw-oB-Una" customClass="RoundButton" customModule="ColculatorApp">
+                                                <rect key="frame" x="264" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.99253541229999998" green="0.58260625600000004" blue="0.01353706233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="oED-kz-bq8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" red="1" green="0.56443629839999998" blue="0.035574158760000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="sxv-fg-Xa4"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2B1-3c-nA1">
+                                        <rect key="frame" x="0.0" y="101" width="344" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lv-bp-Fwg" customClass="RoundButton" customModule="ColculatorApp">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.19998577240000001" green="0.20008715990000001" blue="0.19588676099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="qHl-YS-Nny"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <state key="normal" title="7">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" red="1" green="0.56443629839999998" blue="0.035574158760000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5n-Jw-Rbh" customClass="RoundButton" customModule="ColculatorApp">
+                                                <rect key="frame" x="88" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.19998577240000001" green="0.20008715990000001" blue="0.19588676099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="8yo-GJ-S0A"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <state key="normal" title="8">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" red="1" green="0.56443629839999998" blue="0.035574158760000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWF-qA-0j9" customClass="RoundButton" customModule="ColculatorApp">
+                                                <rect key="frame" x="176" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.19998577240000001" green="0.20008715990000001" blue="0.19588676099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="bme-jk-MGe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <state key="normal" title="9">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" red="1" green="0.56443629839999998" blue="0.035574158760000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQW-Xc-LrN" customClass="RoundButton" customModule="ColculatorApp">
+                                                <rect key="frame" x="264" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.64464253189999998" green="0.37829267979999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="FsI-If-zj6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" red="1" green="0.56443629839999998" blue="0.035574158760000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="NDq-16-eiy"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TWA-7U-vBq">
+                                        <rect key="frame" x="0.0" y="202" width="344" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qky-gf-sLg" customClass="RoundButton" customModule="ColculatorApp">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.19998577240000001" green="0.20008715990000001" blue="0.19588676099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="8ky-gH-WLJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <state key="normal" title="4">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" red="1" green="0.56443629839999998" blue="0.035574158760000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBg-aX-fam" customClass="RoundButton" customModule="ColculatorApp">
+                                                <rect key="frame" x="88" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.19998577240000001" green="0.20008715990000001" blue="0.19588676099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="6v7-l8-PVG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <state key="normal" title="5">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" red="1" green="0.56443629839999998" blue="0.035574158760000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nm-4D-ZtE" customClass="RoundButton" customModule="ColculatorApp">
+                                                <rect key="frame" x="176" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.19998577240000001" green="0.20008715990000001" blue="0.19588676099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="drh-3A-wNx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <state key="normal" title="6">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" red="1" green="0.56443629839999998" blue="0.035574158760000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vk1-Pp-q7m" customClass="RoundButton" customModule="ColculatorApp">
+                                                <rect key="frame" x="264" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.79883593320000001" green="0.4687951803" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="IJb-De-er5"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" red="1" green="0.56443629839999998" blue="0.035574158760000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="9lA-wx-rby"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="UcM-HU-nVV">
+                                        <rect key="frame" x="0.0" y="303" width="344" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LhA-kY-IkJ" customClass="RoundButton" customModule="ColculatorApp">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.19998577240000001" green="0.20008715990000001" blue="0.19588676099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="D0c-VM-tNM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <state key="normal" title="1">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" red="1" green="0.56443629839999998" blue="0.035574158760000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Td-Yq-adv" customClass="RoundButton" customModule="ColculatorApp">
+                                                <rect key="frame" x="88" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.19998577240000001" green="0.20008715990000001" blue="0.19588676099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="dS5-IB-V4r"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <state key="normal" title="2">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" red="1" green="0.56443629839999998" blue="0.035574158760000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ast-S8-IZh" customClass="RoundButton" customModule="ColculatorApp">
+                                                <rect key="frame" x="176" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.19998577240000001" green="0.20008715990000001" blue="0.19588676099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="xOd-wp-0Ba"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <state key="normal" title="3">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" red="1" green="0.56443629839999998" blue="0.035574158760000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DnF-Mu-xcE" customClass="RoundButton" customModule="ColculatorApp">
+                                                <rect key="frame" x="264" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.99253541229999998" green="0.58260625600000004" blue="0.01353706233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="Hqa-aa-aYp"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" red="1" green="0.56443629839999998" blue="0.035574158760000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="aXi-G0-gby"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="CRN-ec-aDW">
+                                        <rect key="frame" x="0.0" y="404" width="344" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4EI-EK-0jx" customClass="RoundButton" customModule="ColculatorApp">
+                                                <rect key="frame" x="0.0" y="0.0" width="168" height="80"/>
+                                                <color key="backgroundColor" red="0.19998577240000001" green="0.20008715990000001" blue="0.19588676099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <state key="normal" title="0">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" red="1" green="0.56443629839999998" blue="0.035574158760000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9a5-Oc-x6E" customClass="RoundButton" customModule="ColculatorApp">
+                                                <rect key="frame" x="176" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.19998577240000001" green="0.20008715990000001" blue="0.19588676099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="d0l-lR-tvL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <state key="normal" title=".">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" red="1" green="0.56443629839999998" blue="0.035574158760000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aId-9g-bY0" customClass="RoundButton" customModule="ColculatorApp">
+                                                <rect key="frame" x="264" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.99253541229999998" green="0.58260625600000004" blue="0.01353706233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="Sc2-Ii-B6S"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                                <state key="normal" title="=">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" red="1" green="0.56443629839999998" blue="0.035574158760000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="8fh-8L-vAD"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="484" id="alt-MD-16p"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04n-X3-KAo">
+                                <rect key="frame" x="35" y="164" width="344" height="174"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="54"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Af-ql-vYT">
+                                <rect key="frame" x="35" y="163" width="344" height="174"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="54"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="04n-X3-KAo" firstAttribute="width" secondItem="n3x-VN-7QG" secondAttribute="width" id="0iK-DP-Qoa"/>
+                            <constraint firstItem="04n-X3-KAo" firstAttribute="leading" secondItem="n3x-VN-7QG" secondAttribute="leading" id="99r-7l-3vA"/>
+                            <constraint firstItem="n3x-VN-7QG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="OW8-fs-Akw"/>
+                            <constraint firstItem="04n-X3-KAo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="R7p-Zr-xCE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="n3x-VN-7QG" secondAttribute="bottom" constant="20" id="Tz7-d5-P5T"/>
+                            <constraint firstItem="fg4-n6-E8e" firstAttribute="top" secondItem="04n-X3-KAo" secondAttribute="bottom" constant="20" id="sLn-Yu-t6e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="display" destination="8Af-ql-vYT" id="aeA-Wa-FYG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="61.607142857142854"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="0lv-bp-Fwg">
+            <size key="intrinsicContentSize" width="30" height="46"/>
+        </designable>
+        <designable name="0nm-4D-ZtE">
+            <size key="intrinsicContentSize" width="30" height="46"/>
+        </designable>
+        <designable name="4EI-EK-0jx">
+            <size key="intrinsicContentSize" width="30" height="46"/>
+        </designable>
+        <designable name="6Td-Yq-adv">
+            <size key="intrinsicContentSize" width="30" height="46"/>
+        </designable>
+        <designable name="9a5-Oc-x6E">
+            <size key="intrinsicContentSize" width="30" height="46"/>
+        </designable>
+        <designable name="Ast-S8-IZh">
+            <size key="intrinsicContentSize" width="30" height="46"/>
+        </designable>
+        <designable name="DnF-Mu-xcE">
+            <size key="intrinsicContentSize" width="30" height="52"/>
+        </designable>
+        <designable name="JQw-oB-Una">
+            <size key="intrinsicContentSize" width="30" height="46"/>
+        </designable>
+        <designable name="LhA-kY-IkJ">
+            <size key="intrinsicContentSize" width="30" height="46"/>
+        </designable>
+        <designable name="UBg-aX-fam">
+            <size key="intrinsicContentSize" width="30" height="46"/>
+        </designable>
+        <designable name="Vk1-Pp-q7m">
+            <size key="intrinsicContentSize" width="30" height="52"/>
+        </designable>
+        <designable name="X5n-Jw-Rbh">
+            <size key="intrinsicContentSize" width="30" height="46"/>
+        </designable>
+        <designable name="aId-9g-bY0">
+            <size key="intrinsicContentSize" width="30" height="52"/>
+        </designable>
+        <designable name="fWF-qA-0j9">
+            <size key="intrinsicContentSize" width="30" height="46"/>
+        </designable>
+        <designable name="fg4-n6-E8e">
+            <size key="intrinsicContentSize" width="53" height="58"/>
+        </designable>
+        <designable name="kQW-Xc-LrN">
+            <size key="intrinsicContentSize" width="30" height="46"/>
+        </designable>
+        <designable name="qky-gf-sLg">
+            <size key="intrinsicContentSize" width="30" height="46"/>
+        </designable>
+    </designables>
+</document>
